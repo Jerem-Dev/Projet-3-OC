@@ -68,6 +68,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 header a {
@@ -94,19 +95,87 @@ nav {
 }
 
 /****** Recherche ***********/
-.recherche {
-  display: flex;
-  flex-direction: column;
+
+.recherche article {
+  margin-bottom: 24px;
 }
+
+.fa-location-dot {
+  color: black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.container-input-recherche {
+  height: 49px;
+  width: 387px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
+  border-radius: 15px;
+}
+
+.fond-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 49px;
+  border-radius: 15px 0 0 15px;
+  background-color: var(--main-bg-color);
+}
+
+.container-input-recherche input {
+  display: flex;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.container-input-recherche input::placeholder {
+  opacity: 100%;
+}
+
+.container-input-recherche button {
+  border: none;
+  height: 49px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px;
+}
+
+.desktop-button {
+  border-radius: 0 15px 15px 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.mobile-button {
+  display: none;
+  border-radius: 15px;
+  margin: 0;
+  box-shadow: 0 8px 10px -8px rgba(0, 0, 0, 1);
+}
+
+.fa-magnifying-glass {
+  color: white;
+}
+
+.container-input-recherche button:hover {
+  opacity: 80%;
+}
+
 .filtre-recherche {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 15px;
 }
+
 .filtre-recherche a {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -121,17 +190,28 @@ nav {
   font-size: 17px;
 }
 
-.recherche .fa-location-dot {
-  color: black;
-}
-
-.button {
+.button-filtres {
   border-style: solid;
   border-width: 2px;
   border-radius: 20px;
   border-color: #d9d9d9;
-  padding: 4px 19px;
+  padding: 10px 19px;
 }
+
+.info {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  border-color: #d9d9d9;
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  margin-right: 5px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
@@ -234,5 +314,15 @@ nav {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .desktop-button {
+    display: none;
+  }
+
+  .mobile-button {
+    display: block;
+  }
+  .filtre-recherche h3 {
+    font-size: 14px;
+  }
   /* ... */
 }

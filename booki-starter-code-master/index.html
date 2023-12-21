@@ -30,43 +30,54 @@
         </nav>
       </header>
       <section class="recherche">
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-        <p>En plein centre-ville ou pleine nature</p>
-        <div class="input-rechercher">
+        <article>
+          <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+          <p>En plein centre-ville ou pleine nature</p>
+        </article>
+        <article>
           <form>
-            <i class="fa-lg fa-solid fa-location-dot"></i>
-            <input
-              type="text"
-              id="localisation"
-              name="localisation"
-              placeholder="Marseille, France"
-            />
-            <button>Rechercher</button>
+            <div class="container-input-recherche">
+              <div class="fond-location">
+                <i class="fa-lg fa-solid fa-location-dot"></i>
+              </div>
+              <input
+                type="text"
+                id="localisation"
+                name="localisation"
+                placeholder="Marseille, France"
+              />
+              <button class="mobile-button">
+                <i class="fa-solid fa-lg fa-magnifying-glass"></i>
+              </button>
+              <button class="desktop-button">Rechercher</button>
+            </div>
           </form>
-        </div>
-        <div class="filtre-recherche">
+        </article>
+        <article class="filtre-recherche">
           <h3>Filtres</h3>
-          <a href="#" class="button"
+          <a href="#" class="button-filtres"
             ><i class="fa-lg fa-solid fa-money-bill-wave"></i>
             <h3>Economique</h3></a
           >
-          <a href="#" class="button"
+          <a href="#" class="button-filtres"
             ><i class="fa-lg fa-solid fa-person"></i>
             <h3>Familial</h3></a
           >
-          <a href="#" class="button"
+          <a href="#" class="button-filtres"
             ><i class="fa-lg fa-solid fa-heart"></i>
             <h3>Romantique</h3></a
           >
-          <a href="#" class="button"
+          <a href="#" class="button-filtres"
             ><i class="fa-lg fa-solid fa-fire"></i>
             <h3>Nos pépites</h3></a
           >
-        </div>
-        <div>
-          <i class="fa-solid fa-lg fa-info"></i>
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
+        </article>
+        <article>
+          <p>
+            <i class="fa-solid fa-xs fa-info info"></i> Plus de 500 logements
+            sont disponibles dans cette ville
+          </p>
+        </article>
       </section>
       <main>
         <div class="hebergements-and-populaires">
