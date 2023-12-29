@@ -110,7 +110,9 @@ nav {
 .recherche article {
   margin-bottom: 24px;
 }
-
+.recherche-title p {
+  margin-top: 5px;
+}
 .container-input-recherche {
   height: 49px;
   width: 387px;
@@ -214,6 +216,11 @@ nav {
   height: 24px;
   padding: 2px;
   margin-right: 5px;
+}
+
+.info-logement {
+  display: flex;
+  align-items: center;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -435,7 +442,6 @@ nav {
   .main-container {
     padding: 0;
   }
-
   header {
     flex-direction: column;
     justify-content: center;
