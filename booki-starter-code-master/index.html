@@ -30,7 +30,7 @@
         </nav>
       </header>
       <section class="recherche">
-        <article>
+        <article class="recherche-title">
           <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
           <p>En plein centre-ville ou pleine nature</p>
         </article>
@@ -56,7 +56,7 @@
         <article class="filtres-recherche">
           <p class="info-navigation">Filtres</p>
           <a href="#" class="filtres"
-            ><i class="fa-lg fa-solid fa-money-bill-wave"></i> Economique</a
+            ><i class="fa-lg fa-solid fa-money-bill-wave"></i> Économique</a
           >
           <a href="#" class="filtres"
             ><i class="fa-lg fa-solid fa-person"></i> Familial</a
@@ -68,11 +68,11 @@
             ><i class="fa-lg fa-solid fa-fire"></i> Nos pépites</a
           >
         </article>
-        <article>
-          <p>
-            <i class="fa-solid fa-xs fa-info info"></i> Plus de 500 logements
-            sont disponibles dans cette ville
-          </p>
+        <article class="info-logement">
+          <div><i class="fa-solid fa-xs fa-info info"></i></div>
+          <div>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
         </article>
       </section>
       <main>
@@ -80,7 +80,7 @@
           <section class="hebergements">
             <h2 class="section-title">Hébergements à Marseille</h2>
             <div class="hebergements-cards">
-              <div class="cards-row">
+              <div class="cards-alignement">
                 <a href="#">
                   <article class="card">
                     <img
@@ -199,7 +199,7 @@
                   </article>
                 </a>
               </div>
-              <div class="cards-row">
+              <div class="cards-alignement">
                 <a href="#">
                   <article class="card">
                     <img
@@ -414,38 +414,40 @@
           </section>
         </div>
         <section class="activites">
-          <div>
-            <h2>Activités à Marseille</h2>
-          </div>
-          <div class="activites-cards">
-            <a class="card" href="#">
-              <img
-                src="images/activites/reno-laithienne.jpg"
-                alt="Image du vieux port"
-              />
-              <h3 class="card-title">Vieux-Port</h3>
-            </a>
-            <a class="card" href="#">
-              <img
-                src="images/activites/paul-hermann.jpg"
-                alt="Image montrant le fort"
-              />
-              <h3 class="card-title">Fort de Pomègues</h3>
-            </a>
-            <a class="card" href="#">
-              <img
-                src="images/activites/kilyan-sockalingum.jpg"
-                alt="Image montrant le littoral du parc"
-              />
-              <h3 class="card-title">Parc national des Calanques</h3>
-            </a>
-            <a class="card" href="#">
-              <img
-                src="images/activites/florian-wehde.jpg"
-                alt="Image montrant Notre-Dame-de-la-Garde sur la colline"
-              />
-              <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
-            </a>
+          <div class="container-activites">
+            <div>
+              <h2>Activités à Marseille</h2>
+            </div>
+            <div class="activites-cards">
+              <a class="card" href="#">
+                <img
+                  src="images/activites/reno-laithienne.jpg"
+                  alt="Image du vieux port"
+                />
+                <h3 class="card-title">Vieux-Port</h3>
+              </a>
+              <a class="card" href="#">
+                <img
+                  src="images/activites/paul-hermann.jpg"
+                  alt="Image montrant le fort"
+                />
+                <h3 class="card-title">Fort de Pomègues</h3>
+              </a>
+              <a class="card" href="#">
+                <img
+                  src="images/activites/kilyan-sockalingum.jpg"
+                  alt="Image montrant le littoral du parc"
+                />
+                <h3 class="card-title">Parc national des Calanques</h3>
+              </a>
+              <a class="card" href="#">
+                <img
+                  src="images/activites/florian-wehde.jpg"
+                  alt="Image montrant Notre-Dame-de-la-Garde sur la colline"
+                />
+                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+              </a>
+            </div>
           </div>
         </section>
       </main>
@@ -453,7 +455,7 @@
         <div class="footer-container">
           <div class="liste-footer">
             <ul>
-              <li class="li-title">A propos</li>
+              <li class="li-title">À propos</li>
               <li><a href="#">Fonctionnement du site</a></li>
               <li><a href="#">Conditions générales</a></li>
               <li><a href="#">Données et confidentialité</a></li>
