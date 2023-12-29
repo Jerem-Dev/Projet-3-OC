@@ -25,16 +25,15 @@
       <header>
         <img src="images/logo/Booki.png" alt="logo de booki" />
         <nav>
-          <a href="#">Hébergements</a>
-          <a href="#">Activités</a>
+          <a href="#hebergements">Hébergements</a>
+          <a href="#activites">Activités</a>
         </nav>
       </header>
       <section class="recherche">
-        <article class="recherche-title">
-          <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-          <p>En plein centre-ville ou pleine nature</p>
-        </article>
-        <article>
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <p>En plein centre-ville ou pleine nature</p>
+        <article class="form-recherche">
+          <h6>Formulaire de recherche</h6>
           <form>
             <div class="container-input-recherche">
               <div class="fond-location">
@@ -54,7 +53,7 @@
           </form>
         </article>
         <article class="filtres-recherche">
-          <p class="info-navigation">Filtres</p>
+          <h3 class="info-navigation">Filtres</h3>
           <a href="#" class="filtres"
             ><i class="fa-lg fa-solid fa-money-bill-wave"></i> Économique</a
           >
@@ -68,17 +67,17 @@
             ><i class="fa-lg fa-solid fa-fire"></i> Nos pépites</a
           >
         </article>
-        <article class="info-logement">
-          <div><i class="fa-solid fa-xs fa-info info"></i></div>
-          <div>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-          </div>
-        </article>
+        <div class="info-logement">
+          <i class="fa-solid fa-xs fa-info info"></i>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
       </section>
       <main>
         <div class="hebergements-and-populaires">
           <section class="hebergements">
-            <h2 class="section-title">Hébergements à Marseille</h2>
+            <h2 class="section-title" id="hebergements">
+              Hébergements à Marseille
+            </h2>
             <div class="hebergements-cards">
               <div class="cards-alignement">
                 <a href="#">
@@ -413,11 +412,9 @@
             </div>
           </section>
         </div>
-        <section class="activites">
+        <section class="activites" id="activites">
+          <h2>Activités à Marseille</h2>
           <div class="container-activites">
-            <div>
-              <h2>Activités à Marseille</h2>
-            </div>
             <div class="activites-cards">
               <a class="card" href="#">
                 <img
