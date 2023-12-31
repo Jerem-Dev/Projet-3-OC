@@ -111,7 +111,7 @@ nav {
 
 /****** Recherche ***********/
 
-.recherche article {
+.recherche div {
   margin-bottom: 24px;
   margin-top: 24px;
 }
@@ -143,10 +143,6 @@ nav {
   font-size: 18px;
 }
 
-.container-input-recherche input::placeholder {
-  opacity: 100%;
-}
-
 .fond-location {
   display: flex;
   align-items: center;
@@ -167,10 +163,6 @@ nav {
 
 .container-input-recherche button:hover {
   opacity: 80%;
-}
-
-.form-recherche h6 {
-  display: none;
 }
 
 .fa-location-dot {
@@ -401,9 +393,7 @@ nav {
 }
 
 .activites-cards .card-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 20px;
+  padding: 15px 14px;
 }
 
 /****** Footer ***********/
@@ -413,20 +403,18 @@ nav {
 
   background-color: var(--main-bg-color);
 }
+
 .footer-container ul {
   display: flex;
   flex-direction: column;
 
   list-style: none;
   gap: 15px;
-  width: 375px;
 }
 
 .liste-footer {
   width: 33%;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 20px 0 20px 20px;
 }
 
 .li-title {
@@ -471,10 +459,14 @@ nav {
   }
 
   .populaires-cards a {
-    width: 30%;
+    width: 32%;
   }
 
-  .populaires-cards .card-title {
+  .populaires .card-title {
+    font-size: 14px;
+  }
+
+  .hebergements .card-title {
     font-size: 14px;
   }
 
@@ -492,6 +484,7 @@ nav {
 @media (max-width: 767.98px) {
   .main-container {
     padding: 0;
+    min-width: 320px;
   }
 
   header {
@@ -537,6 +530,7 @@ nav {
 
   .filtres {
     font-size: 14px;
+    padding: 10px 5px;
   }
 
   .filtres-recherche {
@@ -548,7 +542,7 @@ nav {
   }
 
   .filtres-recherche a {
-    width: 45%;
+    width: 47%;
   }
 
   .desktop-button {
@@ -622,7 +616,7 @@ nav {
     flex-direction: column;
   }
 
-  .footer-container ul {
-    padding-left: 30px;
+  .liste-footer {
+    width: 100%;
   }
 }
